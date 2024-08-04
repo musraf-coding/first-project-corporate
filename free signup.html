@@ -1,0 +1,51 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="fs css.css">
+        <script>
+            function verify(){
+                var a = document.getElementById("ei").value;
+                var b = document.getElementById("pw").value;
+                var cb = document.getElementById("cb");
+                var c = document.getElementById("eip");
+                var d = document.getElementById("pwp");
+                var e = document.getElementById("cbp");
+                if(a.length<10){
+                    document.getElementById("eip").innerHTML = " inset valid email id";
+                }
+                if(a.length<12){
+                    document.getElementById("pwp").innerHTML = " minimum 12 charecters";
+                }
+                if(cb.checked!=true){
+                    document.getElementById("cbp").innerHTML = " you are not receive your SEO";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="d1">
+            <h1 id="h1">"DON'T MISS TO </h1><h1 id="h1">SIGN UP" </h1>
+        </div>
+        <div id="d2">
+            <h2 id="ca">Create your account</h2>
+            <button id="bg"><img src="images/google.png" id="g">    <p id="cg">Continue with Google</p></button>
+            <p id="ca">_______________or_____________</p>
+            <lable id="bg">Email</lable>
+            <br>
+            <input type="email" id="ei">
+            <p id="eip"> </p>
+            
+            <lable id="bg">Password</lable>
+            <br>
+            <input type="password" id="pw">
+            <p id="pwp"></p>
+            
+            <input type="checkbox" id="cb"><span>Receive your SEO tips</span>
+           <p id="cbp"></p>
+            <button id="ca1" onclick="verify()">Create account</button>
+            <br><br>
+            <p id="cb">Already have an account?<span><a href="" id="lo">Login</a></span>
+            <br><br>
+            <p id="cb">By creating your account,you agree to the</p><p id="cb"><u>Terms of Service</u>and<u>Privacy Policy</u></p>
+        </div>
+    </body>
+</html>
